@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List Moderna</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Lista de tarefas</h1>
+      <button id="toggle-theme">🌙</button>
+    </header>
+
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Digite uma tarefa..." required />
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <div class="filters">
+      <button data-filter="all" class="active">Todas</button>
+      <button data-filter="active">Ativas</button>
+      <button data-filter="done">Concluídas</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+  </div>
+</body>
+</html>
+
